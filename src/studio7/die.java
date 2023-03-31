@@ -2,9 +2,19 @@ package studio7;
 
 public class die {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private int sides;
+	
+	public die(int n) {
+		
+		this.sides = n;
+		
+	}
+	
+	public int number() {
+		
+		int num = (int) Math.random()*this.sides+1;
+		return num;
+		
 	}
 
 }
